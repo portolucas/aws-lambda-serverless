@@ -1,0 +1,22 @@
+org: lucasporto
+app: aws-hello-world
+service: aws-hello-world
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  api:
+    handler: index.handler
+    events:
+      - httpApi:
+          path: /
+          method: get  
+  # api2:
+  #   handler: urlShortner.urlShortner
+  #   events:
+  #     - httpApi:
+  #         path: /urlShortner
+  #         method: post
