@@ -12,6 +12,16 @@ Para seguir com o tutorial, você deve ter uma conta na AWS. Entre ou crie uma c
 
 Uma vez que você criou uma conta na AWS, precisamos vincular essa conta à conta do Serverless Framework.
 
+Instale o Serverless globalmente.
+```
+npm i -g serverless
+```
+
+Faça login no Serverless Framework. Escolha fazer login pelo Serverless Dashboard.
+```
+sls login
+```
+
 Para isso, entre na plataforma do Serverless Framework, clique em **org** -> **provider** -> **add**. Nomeie seu provider e clique em **Connect AWS Provider**. Por fim, vá à aba **apps** -> **create app** -> e nomeie o seu app. Selecione o template **Node HTTP API**. Quando você terminar, vai aparecer um modal com um código. Copie esse código e cole no seu terminal.
 
 O seu código deve se parecer com esse:
